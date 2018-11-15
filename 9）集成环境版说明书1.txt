@@ -1,0 +1,10 @@
+Zero dependencies except NVidia Video drivers prebuilt OpenDeepFaceSwap binary for Windows 7,8,8.1,10.
+
+Homepage: https://github.com/iperov/OpenDeepFaceSwap
+
+Place data_src.mp4(avi,mkv) video to workspace\ folder
+Place data_dst.mp4(avi,mkv) video to workspace\ folder
+
+and follow .bat files.
+
+You can translate manual_ru.txt to your language.

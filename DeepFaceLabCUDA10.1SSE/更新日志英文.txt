@@ -1,0 +1,116 @@
+== 03.24.2019 ==
+
+old SAE model will not work with this update.
+
+Fixed bug when SAE can be collapsed during a time. 
+
+SAE: removed CA weights and encoder/decoder dims.
+
+added new options:
+
+Encoder dims per channel (21-85 ?:help skip:%d) 
+More encoder dims help to recognize more facial features, but require more VRAM. You can fine-tune model size to fit your GPU.
+
+Decoder dims per channel (11-85 ?:help skip:%d) 
+More decoder dims help to get better details, but require more VRAM. You can fine-tune model size to fit your GPU.
+
+Add residual blocks to decoder? (y/n, ?:help skip:n) : 
+These blocks help to get better details, but require more computing time.
+
+Remove gray border? (y/n, ?:help skip:n) : 
+Removes gray border of predicted face, but requires more computing resources.
+
+
+Extract images from video: added option
+Output image format? ( jpg png ?:help skip:png ) : 
+PNG is lossless, but produces images with size x10 larger than JPG.
+JPG extraction is faster, especially on HDD instead of SSD.
+
+== 03.21.2019 ==
+
+OpenCL build: fixed, now works on most video cards again.
+
+old SAE model will not work with this update.
+Fixed bug when SAE can be collapsed during a time
+
+Added option
+Use CA weights? (y/n, ?:help skip: n ) :
+Initialize network with 'Convolution Aware' weights. 
+This may help to achieve a higher accuracy model, but consumes time at first run.
+
+Extractor:
+removed DLIB extractor
+greatly increased accuracy of landmarks extraction, especially with S3FD detector, but speed of 2nd pass now slower.
+From this point on, it is recommended to use only the S3FD detector.
+before https://i.imgur.com/SPGeJCm.gif
+after https://i.imgur.com/VmmAm8p.gif
+
+Converter: added new option to choose type of mask for full-face models.
+
+Mask mode: (1) learned, (2) dst, (3) FAN-prd, (4) FAN-dst (?) help. Default - 1 : 
+Learned – Learned mask, if you choose option 'Learn mask' in model. The contours are fairly smooth, but can be wobbly.
+Dst – raw mask from dst face, wobbly contours.
+FAN-prd – mask from pretrained FAN model from predicted face. Very smooth not shaky countours.
+FAN-dst – mask from pretrained FAN model from dst face. Very smooth not shaky countours.
+Advantages of FAN mask: you can get a not wobbly shaky without learning it by model.
+Disadvantage of FAN mask: may produce artifacts on the contours if the face is obstructed.
+
+== 03.13.2019 ==
+
+SAE: added new option
+
+Optimizer mode? ( 1,2,3 ?:help skip:1) : 
+this option only for NVIDIA cards. Optimizer mode of neural network.
+1 - default.
+2 - allows you to train x2 bigger network, uses a lot of RAM.
+3 - allows you to train x3 bigger network, uses huge amount of RAM and 30% slower.
+
+Epoch term renamed to iteration term.
+
+added showing timestamp in string of training in console
+
+== 03.11.2019 ==
+
+CUDA10.1AVX users - update your video drivers from geforce.com site
+
+face extractor:
+
+added new extractor S3FD - more precise, produces less false-positive faces, accelerated by AMD/IntelHD GPU (while MT is not)
+
+speed of 1st pass with DLIB significantly increased
+
+decreased amount of false-positive faces for all extractors
+
+manual extractor: added 'h' button to hide the help information
+
+fix DFL conflict with system python installation
+
+removed unwanted tensorflow info from console log
+
+updated manual_ru
+
+== 03.07.2019 ==
+
+fixes
+
+upgrade to python 3.6.8
+
+Reorganized structure of DFL folder. Removed unnecessary files and other trash.
+
+Current available builds now:
+
+DeepFaceLabCUDA9.2SSE - for NVIDIA cards up to GTX10x0 series and any 64-bit CPU
+DeepFaceLabCUDA10.1AVX - for NVIDIA cards up to RTX and CPU with AVX instructions support
+DeepFaceLabOpenCLSSE - for AMD/IntelHD cards and any 64-bit CPU
+
+== 03.04.2019 == 
+
+added
+4.2.other) data_src util recover original filename.bat
+5.3.other) data_dst util recover original filename.bat
+
+== 03.03.2019 ==
+
+Convertor: fix seamless
+
+== for older changelog see github page ==

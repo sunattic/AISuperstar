@@ -1,0 +1,30 @@
+You can translate manual_ru.pdf to your language via https://www.onlinedoctranslator.com
+
+Found english tutorial here (can be outdated)
+https://mrdeepfakes.com/forums/thread-deepfacelab-explained-and-usage-tutorial 
+
+Video guides (can be outdated):
+
+Beginners tutorial 
+https://www.youtube.com/watch?v=K98nTNjXkq8
+
+How To Make DeepFakes With DeepFaceLab - An Amatuer's Guide
+https://www.youtube.com/watch?v=wBax7_UWXvc
+
+DeepLearning series Ep 1 : DeepFaceLab Installation and Workflow TUTORIAL
+https://www.youtube.com/watch?v=nboXZlXGFWM
+
+DeepLearning series Ep 3 : DeepFake without a Graphics Card - Deepfacelab CPU Walkthrough 
+https://www.youtube.com/watch?v=QFjhnJcFdZk
+
+If you like this software, please consider a donation.
+
+Goal: RTX 2080 TI
+
+Donate via Yandex.Money https://money.yandex.ru/to/41001142318065
+
+Donate via Paypal https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KK5ZCH4JXWMQS&source=url
+
+Donate via Alipay https://i.loli.net/2019/01/13/5c3ae3829809f.jpg
+
+bitcoin:31mPd6DxPCzbpCMZk4k1koWAbErSyqkAXr

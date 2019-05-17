@@ -6,4 +6,5 @@
 开发了一套GUI
 中文界面，中文参数。
 欢迎下载
-链接: https://pan.baidu.com/s/1k9ODZ3FBvUPUySKNeoaIhg 提取码: bi7p 百度云盘
+链接: https://deepface.vxmeng.com/deepface.exe
+更新的新的功能，精简了操作，自带操作视频

@@ -6,5 +6,6 @@
 开发了一套GUI
 中文界面，中文参数。
 欢迎下载
-链接: http://deepface.vxmeng.com/DeepFace1.01.exe
+链接: http://deepface.vxmeng.com/
+直接下载使用
 更新的新的功能，精简了操作，自带操作视频
